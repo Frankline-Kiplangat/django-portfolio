@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static%}
+
+{% block content %}
+{{block.super}}
+		<div class="landing-text">
+            <div class="container">
+              <div class="">
+                <div class="col-md-12 text-center">
+                <br>
+                  <h2 class="">Hello, I'm Frankline Kiplangat</h2>
+                  <h2 class="font-weight-bold">Fullstack Software Developer</h5>
+                  <p>I create modern and responsive Web Applications</p>
+						<img id="profilepic" class="responsive" src="{% static 'images/frank.jpg' %}">
+				     <div class="mouse-click"></div>
+             
+    <a href="{%url 'about' %}"><img src="static/images/mouse-click.png" id="mouse-click"></a>
+    </div>
+              </div>
+ 
+              </div>
+  </div>
+<footer>
+&copy 2020 Frank Kip
+</footer>
+{% endblock %}

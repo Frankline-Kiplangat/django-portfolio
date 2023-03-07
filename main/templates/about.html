@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="about">
+    <div class="about mt-5" id="about">
+        <div class="section-heading text-center">
+          <h1>About Me</h1>
+		  <hr>
+        </div>
+        <div class="about-details">
+          <div class="container-fluid">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <p>People find me to be an upbeat, self-motivated team player with excellent communication skills. 
+                         I enjoy building everything from small business sites to portfolio themes and rich interactive web applications.
+                        <p>Developing softwares gives me a chance of making a difference in people’s lives. 
+                             When I manage to build something that saves time and prevents people from doing tedious tasks, 
+                             I know that I am making a difference in their lives. This ranges from contributing to the technologies themselves to helping engineers become proficient in them. 
+                        </p>
+                        <p>I enjoy the collaborative nature of working on a team building a product. 
+                          I'm ready to jump onto a supportive team and begin contributing.</p>
+
+                      <div class="cv">
+                          <a class="btn btn-xl btn-primary" href="/static/Frank Kiplangat Resume.pdf" download>
+                          <i class="fas fa-download mr-2"></i>
+                          Download Resume
+                          </a>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                      <div class="col-md-4">
+                        <h6 class="ml-5 mt-4"><p><strong>My Skills</strong></p></h6> <hr>
+                        <ul>
+                          <li class="python"><img class="pyicon ml-1" src="{% static 'images/py.png' %}" alt="" width="40%"><strong>Python</strong></li> <br>
+                          <li class="ftext"><img class="flask ml-1" src="{% static 'images/flasklogo1.png' %}" alt="" width="40%"><strong>Flask</strong></li> <br>
+                          <li class="django"><img class="djangoicon" src="{% static 'images/django1.jpg' %}" alt="" width="40%"><strong>Django</strong></li> <br>
+                          <li class="js"><img class="jsicon" src="{% static 'images/jjs.png' %}" alt="" width="45%"><strong>Javascript</strong></li> <br>
+                          <li class="bootstrap"><img class="booticon" src="{% static 'images/boot1.png' %}" alt="" width="40%"><strong>Bootstrap</strong></li> <br>
+                          <li class="css"><img class="cssicon" src="{% static 'images/css1.jpg' %}" alt="" width="40%"><strong>CSS3</strong></li> <br>
+                          <li class="html"><img class="htmlicon" src="{% static 'images/html.png' %}" alt="" width="40%"><strong>HTML5</strong></li> <br>
+                          <li class="react"><img class="reacticon" src="{% static 'images/reactlogo.png' %}" alt="" width="40%" ><strong>React</strong></li> <br>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+{% endblock %}
+      <!--end of about section-->
+
